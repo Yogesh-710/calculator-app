@@ -1,5 +1,6 @@
-from opration import do_addition, do_subtraction
+from opration import do_addition, do_subtraction, do_division
 from multiply import do_multiplication
+
 
 
 def main():
@@ -9,6 +10,7 @@ def main():
           1. add
           2. subtract
           3. multiply
+          4. division
 """)
     
     user_input = input("select the function")
@@ -21,7 +23,10 @@ def main():
     elif user_input=="2":
         result = print(do_subtraction(a,b))
     elif user_input=="3":
-        result = print(do_multiplication(a,b)) 
+        result = print(do_multiplication(a,b))
+    elif user_input == "4":
+        result = print(do_division(a,b))
+
 
 if __name__ == "__main__":
     main()   
